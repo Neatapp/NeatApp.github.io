@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Neat: Finding What You Like, For You</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<style>
+    .centered-button {
+        display: block;
+        width: 100px;
+        margin-top: 100px;
+        color: white
+    }
+    
+    .absoluteCenter {
+        /* Must manually set width/height */
+        width: 800px;
+        height: 500px;
+        /* The magic centering code */
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        /* Aligns Vertically - Remove for Horizontal Only */
+        left: 0;
+        right: 0;
+        /* Aligns Horizontally - Remove for Vertical Only  */
+        /* Prevent div from overflowing main window */
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+    }
+    
+    img.center {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    #subtitle {
+        font-family: 'Roboto', serif;
+        font-size: 30px;
+        font-weight: 300;
+    }
+    
+    #title {
+        font-family: 'Roboto', serif;
+        font-size: 50px;
+        font-weight: 400;
+    }
+    
+    body {
+        background-image: url(http://www.teliostutors.com/wp-content/uploads/2016/12/music-1.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<body>
+    <div class="absoluteCenter">
+        <div align=center id="subtitle">Do you like</div>
+        <div align=center id="title"> Music </div>
+        <div align=center>
+            <a class="waves-effect waves-light btn-flat centered-button" onclick="window.location.href='memequestion.html'"> Yes</a> 
+
+            <a class="waves-effect waves-light btn-flat centered-button">No</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
